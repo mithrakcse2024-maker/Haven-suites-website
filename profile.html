@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile - Haven Suites</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <button onclick="goBack()">← Back</button>
+    <h1>Profile</h1>
+    <button onclick="signOut()">Sign Out</button>
+    <button onclick="contactUs()">Contact Us</button>
+  </header>
+
+  <main>
+    <div class="profile-details">
+      <p><strong>Name:</strong> Toto</p>
+      <p><strong>Email:</strong> toto@gmail.com</p>
+      <p><strong>Mobile:</strong> +91-1234567890</p>
+      <p><strong>Address:</strong> Chennai, India</p>
+    </div>
+
+    <div class="payment-section">
+      <h2>Payment</h2>
+      <form id="paymentForm">
+        <input type="text" placeholder="Card Holder Name" required>
+        <input type="text" placeholder="Card Number" required>
+        <input type="month" placeholder="Valid From" required>
+        <input type="month" placeholder="Expiry Date" required>
+        <select required>
+          <option value="">Select Card</option>
+          <option>Mastercard</option>
+          <option>Axis Bank</option>
+          <option>ICICI Bank</option>
+          <option>SBI Card</option>
+          <option>Indian Bank</option>
+          <option>HDFC Bank</option>
+          <option>VISA Card</option>
+        </select>
+        <button type="submit">Pay</button>
+      </form>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
