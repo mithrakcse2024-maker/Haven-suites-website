@@ -1,0 +1,15 @@
+body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f7f7f7; }
+header { display:flex; align-items:center; justify-content:space-between; padding:10px 20px; background:#ffd700; }
+.logo { width:60px; }
+.profile-icon { width:40px; cursor:pointer; }
+h1,h2,h3 {margin:10px 0;}
+.hotel-list { display:flex; gap:15px; flex-wrap:wrap; padding:20px; }
+.hotel-card { background:#fff; padding:10px; border-radius:10px; flex:1 1 calc(30% - 20px); cursor:pointer; box-shadow:0 0 10px rgba(0,0,0,0.1); }
+.hotel-card img {width:100%; border-radius:10px;}
+.hotel-img {width:100%; max-width:600px; display:block; margin:10px auto;}
+input, select, button {margin:5px 0; padding:10px; width:100%; border-radius:5px;}
+button {background:#ffd700; border:none; cursor:pointer;}
+.search-bar { display:flex; gap:5px; margin:20px; }
+.search-bar input {flex:1;}
+.input-group { position:relative; margin:15px 0; }
+.toggle-eye { position:absolute; right:10px; top:50%; transform:translateY(-50%); cursor:pointer; }
