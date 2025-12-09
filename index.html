@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Haven Suites Booking Demo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <img src="images/logo.png" alt="Haven Suites Logo" class="logo">
+    <nav>
+      <a href="profile.html"><img src="images/profile.png" alt="Profile" class="profile-icon"></a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Sign In</h1>
+    <form id="signinForm">
+      <div class="input-group">
+        <input type="email" id="email" placeholder="Email" required value="toto@gmail.com">
+        <span class="toggle-eye" onclick="toggleEmailVisibility()">👁️</span>
+      </div>
+      <div class="input-group">
+        <input type="password" id="password" placeholder="Password" required value="toto123">
+        <span class="toggle-eye" onclick="togglePasswordVisibility()">👁️</span>
+      </div>
+      <button type="submit">Sign In</button>
+    </form>
+
+    <h2>Search Hotels in Chennai</h2>
+    <div class="search-bar">
+      <input type="text" placeholder="Enter location: Triplicane, Tambaram...">
+      <button onclick="searchHotels()">Search</button>
+    </div>
+
+    <div class="hotel-list">
+      <div class="hotel-card" onclick="goToHotel('Haven Suites - Triplicane', '2500')">
+        <img src="images/hotel1.jpg" alt="Haven Suites Triplicane">
+        <h3>Haven Suites - Triplicane</h3>
+        <p>Price: ₹2,500/night</p>
+      </div>
+      <div class="hotel-card" onclick="goToHotel('Haven Suites - Koyambedu', '3000')">
+        <img src="images/hotel2.jpg" alt="Haven Suites Koyambedu">
+        <h3>Haven Suites - Koyambedu</h3>
+        <p>Price: ₹3,000/night</p>
+      </div>
+      <div class="hotel-card" onclick="goToHotel('Haven Suites - Tambaram', '2800')">
+        <img src="images/hotel3.jpg" alt="Haven Suites Tambaram">
+        <h3>Haven Suites - Tambaram</h3>
+        <p>Price: ₹2,800/night</p>
+      </div>
+      <div class="hotel-card" onclick="goToHotel('Haven Suites - Pallavaram', '3200')">
+        <img src="images/hotel1.jpg" alt="Haven Suites Pallavaram">
+        <h3>Haven Suites - Pallavaram</h3>
+        <p>Price: ₹3,200/night</p>
+      </div>
+      <div class="hotel-card" onclick="goToHotel('Haven Suites - Chrompet', '2900')">
+        <img src="images/hotel2.jpg" alt="Haven Suites Chrompet">
+        <h3>Haven Suites - Chrompet</h3>
+        <p>Price: ₹2,900/night</p>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
